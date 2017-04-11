@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.title {
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-card" style="margin: 8px auto;">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header">5号宿舍楼302</div>
+				<!--内容区-->
+				<div class="mui-card-content" style="height: 120px;">
+					<img src="images/logo.png" style="width: 100px; height:100px;float: left;" />
+					<div id="" style="float: left;margin:10px;width:120px;height:100px; padding-top: 10px;">
+						<div style="padding:5px; font: '微软雅黑';font-size:14px;color: #EC971F;">门：已锁</div>
+						<div style="padding:5px; font: '微软雅黑';font-size:14px;color: #EC971F;border-bottom: 1px solid #C8C7CC;border-top: 1px solid #C8C7CC;">主锁：未开启</div>
+						<div style="padding:5px; font: '微软雅黑';font-size:14px;color: #EC971F;">摄像头：未开启</div>
+					</div>
+					<div id="">
+						<img src="images/sunny.png" alt="" style="margin:20px;margin-bottom: 0px;" />
+						<center>晴天</center>
+					</div>
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer" style="float: none;">
+					<div>门锁电量<span style="margin: 5px; color: dodgerblue;">90%</span></div>
+					<div>可用时间<span style="margin: 5px; color: dodgerblue;">15小时32分</span></div>
+				</div>
+			</div>
+			<div class="mui-card" style="margin: 8px auto;">
+				<!--内容区-->
+				<div class="mui-card-content" >
+					<div style="float: left;background:;width:33%;height: 120px;margin: 0px;padding: 0px;">
+						<img src="images/lock.png" style="height: 70%;padding-left: 20px;padding-top: 10px;"/>
+						<div id="" style="text-align: center;">扫码开锁</div>
+					</div>
+					<div style="float: left;background:;width:33%;height: 120px;margin: 0px;padding: 0px;">
+						<img src="images/tel.png" style="height: 70%;padding-left: 20px;padding-top: 10px;"/>
+						<div id="" style="text-align: center;">一键呼救</div>
+					</div>
+					<div style="float: left;background:;width:33%;height: 120px;margin: 0px;padding: 0px;">
+						<img src="images/video.png" style="height: 70%;padding-left: 20px;padding-top: 10px;"/>
+						<div id="" style="text-align: center;">实时监控</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-card" style="margin: 8px auto;">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header">录像快照</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="mui-slider" style="height: 200px ;width: 100%; background: #0062CC;">
+						<div class="mui-slider-group mui-slider-loop">
+							<div class="mui-slider-item">
+								<a href="#"><img src="images/video4.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="images/video1.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="images/video2.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="images/video3.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="images/video4.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="images/video1.jpg" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">
+					查看更多
+				</div>
+			</div>
+
+			<div class="mui-card" style="margin: 8px auto;">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header">开门记录</div>
+				<!--内容区-->
+				<div class="mui-card-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">顾樟杰
+							<span style="color: #AAAAAA; margin-left: 5px;">1分钟前 18:37:29</span>
+							<span class="mui-badge mui-badge-success">安全</span>
+						</li>
+						<li class="mui-table-view-cell">倪颖鹤
+							<span style="color: #AAAAAA; margin-left: 5px;">昨天 6:37:29</span>
+							<span class="mui-badge mui-badge-success">安全</span>
+						</li>
+						<li class="mui-table-view-cell">李博
+							<span style="color: #AAAAAA; margin-left: 5px;">5分钟前 18:37:29</span>
+							<span class="mui-badge mui-badge-primary">开锁失败</span>
+						</li>
+						<li class="mui-table-view-cell">凌曦
+							<span style="color: #AAAAAA; margin-left: 5px;">2小时前 18:37:29</span>
+							<span class="mui-badge mui-badge-success">安全</span>
+						</li>
+						<li class="mui-table-view-cell">方钰秀
+							<span style="color: #AAAAAA; margin-left: 5px;">3天前 18:37:29</span>
+							<span class="mui-badge mui-badge-primary">开锁失败</span>
+						</li>
+					</ul>
+				</div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">
+					查看更多
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+	</script>
+
+</html>
