@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+		<script src="js/mui.min.js"></script>
 		<link rel="stylesheet" href="css/mui.min.css">
 		<style>
 			html,
@@ -49,17 +49,17 @@
 			</div>
 			<div class="mui-card" style="margin: 8px auto;">
 				<!--内容区-->
-				<div class="mui-card-content" >
+				<div class="mui-card-content">
 					<div style="float: left;background:;width:33%;height: 120px;margin: 0px;padding: 0px;">
-						<img src="images/lock.png" style="height: 70%;padding-left: 20px;padding-top: 10px;"/>
+						<img src="images/lock.png" style="height: 70%;padding-left: 20px;padding-top: 10px;" />
 						<div id="" style="text-align: center;">扫码开锁</div>
 					</div>
 					<div style="float: left;background:;width:33%;height: 120px;margin: 0px;padding: 0px;">
-						<img src="images/tel.png" style="height: 70%;padding-left: 20px;padding-top: 10px;"/>
+						<img src="images/tel.png" style="height: 70%;padding-left: 20px;padding-top: 10px;" />
 						<div id="" style="text-align: center;">一键呼救</div>
 					</div>
 					<div style="float: left;background:;width:33%;height: 120px;margin: 0px;padding: 0px;">
-						<img src="images/video.png" style="height: 70%;padding-left: 20px;padding-top: 10px;"/>
+						<img src="images/video.png" style="height: 70%;padding-left: 20px;padding-top: 10px;" />
 						<div id="" style="text-align: center;">实时监控</div>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 				<div class="mui-card-content">
 					<div class="mui-slider" style="height: 200px ;width: 100%; background: #0062CC;">
 						<div class="mui-slider-group mui-slider-loop">
-							<div class="mui-slider-item">
+							<div class="mui-slider-item mui-slider-item-duplicate">
 								<a href="#"><img src="images/video4.jpg" /></a>
 							</div>
 							<div class="mui-slider-item">
@@ -86,12 +86,19 @@
 							<div class="mui-slider-item">
 								<a href="#"><img src="images/video4.jpg" /></a>
 							</div>
-							<div class="mui-slider-item">
+							<div class="mui-slider-item mui-slider-item-duplicate">
 								<a href="#"><img src="images/video1.jpg" /></a>
 							</div>
 						</div>
+						<div class="mui-slider-indicator">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+						</div>
 					</div>
 				</div>
+
 				<!--页脚，放置补充信息或支持的操作-->
 				<div class="mui-card-footer">
 					查看更多
@@ -139,6 +146,13 @@
 		mui.init({
 			swipeBack: true //启用右滑关闭功能
 		});
+		mui.plusReady(function(){
+			mui.toast('1')
+//			var gallery = mui('.mui-slider');
+// 			gallery.slider({
+//			interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+//		});
+		})
 	</script>
 
 </html>
