@@ -304,5 +304,17 @@
 				"README.md"
 			]
 		}
-	}
+	},
+	"unpackage":[
+	  "css/mui.css",
+	  "images/iconfont-tianjia.png",
+	  "images/qihoo.png",
+	  "images/qq.png",
+	  "images/weixin.png",
+	  "js/mui.js",
+	  "js/mui.locker.js",
+	  "README.md",
+	  "forget_password.html",
+	  "unlock.html"
+	]
 }
